@@ -1,0 +1,4356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div class="c proctitle">The CONTENTS Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Contents: Attributes">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set Name</th>
+<td class="l data">OUTDIR.DATASET_II</td>
+<th class="l rowheader" scope="row">Observations</th>
+<td class="l data">149852772</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Member Type</th>
+<td class="l data">DATA</td>
+<th class="l rowheader" scope="row">Variables</th>
+<td class="l data">242</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Engine</th>
+<td class="l data">V9</td>
+<th class="l rowheader" scope="row">Indexes</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Created</th>
+<td class="l data">18/04/2016 04:27:46</td>
+<th class="l rowheader" scope="row">Observation Length</th>
+<td class="l data">1936</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Last Modified</th>
+<td class="l data">18/04/2016 04:27:46</td>
+<th class="l rowheader" scope="row">Deleted Observations</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Protection</th>
+<td class="l data">&nbsp;</td>
+<th class="l rowheader" scope="row">Compressed</th>
+<td class="l data">NO</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Data Set Type</th>
+<td class="l data">&nbsp;</td>
+<th class="l rowheader" scope="row">Sorted</th>
+<td class="l data">NO</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Label</th>
+<td class="l data">&nbsp;</td>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Data Representation</th>
+<td class="l data">WINDOWS_64</td>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Encoding</th>
+<td class="l data">wlatin1  Western (Windows)</td>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="l data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX1"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Contents: Engine/Host Information">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Engine/Host Dependent Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set Page Size</th>
+<td class="l data">155648</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Data Set Pages</th>
+<td class="l data">1873160</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">First Data Page</th>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Max Obs per Page</th>
+<td class="l data">80</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Obs in First Data Page</th>
+<td class="l data">65</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Data Set Repairs</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">ExtendObsCounter</th>
+<td class="l data">YES</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Filename</th>
+<td class="l data">F:\shire_followup\data\dataset_ii.sas7bdat</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Release Created</th>
+<td class="l data">9.0401M1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Host Created</th>
+<td class="l data">X64_ES08R2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX2"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Contents: Variables">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Alphabetic List of Variables and Attributes</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="l b header" scope="col">Variable</th>
+<th class="l b header" scope="col">Type</th>
+<th class="r b header" scope="col">Len</th>
+<th class="l b header" scope="col">Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">237</th>
+<td class="l data">AGE</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">AGE</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">167</th>
+<td class="l data">DIAG_10_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_10_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">DIAG_10_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_10_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="l data">DIAG_10_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_10_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">168</th>
+<td class="l data">DIAG_11_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_11_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">DIAG_11_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_11_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="l data">DIAG_11_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_11_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">169</th>
+<td class="l data">DIAG_12_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_12_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">DIAG_12_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_12_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="l data">DIAG_12_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_12_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">170</th>
+<td class="l data">DIAG_13_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_13_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">DIAG_13_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_13_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="l data">DIAG_13_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_13_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">171</th>
+<td class="l data">DIAG_14_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_14_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">DIAG_14_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_14_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="l data">DIAG_14_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_14_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">172</th>
+<td class="l data">DIAG_15_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_15_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">DIAG_15_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_15_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="l data">DIAG_15_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_15_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">173</th>
+<td class="l data">DIAG_16_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_16_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">DIAG_16_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_16_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="l data">DIAG_16_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_16_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">174</th>
+<td class="l data">DIAG_17_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_17_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">DIAG_17_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_17_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="l data">DIAG_17_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_17_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">175</th>
+<td class="l data">DIAG_18_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_18_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">DIAG_18_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_18_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="l data">DIAG_18_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_18_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">176</th>
+<td class="l data">DIAG_19_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_19_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">DIAG_19_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_19_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="l data">DIAG_19_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_19_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">158</th>
+<td class="l data">DIAG_1_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_1_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">DIAG_1_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_1_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="l data">DIAG_1_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_1_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">177</th>
+<td class="l data">DIAG_20_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_20_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">DIAG_20_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_20_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<td class="l data">DIAG_20_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_20_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">178</th>
+<td class="l data">DIAG_21_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_21_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">DIAG_21_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_21_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<td class="l data">DIAG_21_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_21_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">179</th>
+<td class="l data">DIAG_22_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_22_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">DIAG_22_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_22_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<td class="l data">DIAG_22_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_22_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">180</th>
+<td class="l data">DIAG_23_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_23_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">DIAG_23_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_23_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<td class="l data">DIAG_23_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_23_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">181</th>
+<td class="l data">DIAG_24_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_24_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">DIAG_24_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_24_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">103</th>
+<td class="l data">DIAG_24_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_24_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">182</th>
+<td class="l data">DIAG_25_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_25_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">DIAG_25_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_25_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">104</th>
+<td class="l data">DIAG_25_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_25_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">183</th>
+<td class="l data">DIAG_26_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_26_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">DIAG_26_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_26_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">105</th>
+<td class="l data">DIAG_26_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_26_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">184</th>
+<td class="l data">DIAG_27_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_27_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">DIAG_27_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_27_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">106</th>
+<td class="l data">DIAG_27_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_27_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">185</th>
+<td class="l data">DIAG_28_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_28_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">DIAG_28_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_28_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">107</th>
+<td class="l data">DIAG_28_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_28_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">186</th>
+<td class="l data">DIAG_29_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_29_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">DIAG_29_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_29_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">108</th>
+<td class="l data">DIAG_29_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_29_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">159</th>
+<td class="l data">DIAG_2_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_2_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">DIAG_2_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_2_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="l data">DIAG_2_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_2_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">187</th>
+<td class="l data">DIAG_30_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_30_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">DIAG_30_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_30_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">109</th>
+<td class="l data">DIAG_30_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_30_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">188</th>
+<td class="l data">DIAG_31_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_31_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">DIAG_31_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_31_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">110</th>
+<td class="l data">DIAG_31_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_31_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">189</th>
+<td class="l data">DIAG_32_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_32_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">DIAG_32_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_32_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">111</th>
+<td class="l data">DIAG_32_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_32_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">190</th>
+<td class="l data">DIAG_33_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_33_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">DIAG_33_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_33_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">112</th>
+<td class="l data">DIAG_33_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_33_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">191</th>
+<td class="l data">DIAG_34_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_34_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">DIAG_34_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_34_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">113</th>
+<td class="l data">DIAG_34_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_34_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">192</th>
+<td class="l data">DIAG_35_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_35_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">DIAG_35_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_35_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">114</th>
+<td class="l data">DIAG_35_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_35_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">193</th>
+<td class="l data">DIAG_36_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_36_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">DIAG_36_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_36_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">115</th>
+<td class="l data">DIAG_36_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_36_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">194</th>
+<td class="l data">DIAG_37_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_37_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">DIAG_37_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_37_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">116</th>
+<td class="l data">DIAG_37_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_37_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">195</th>
+<td class="l data">DIAG_38_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_38_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">DIAG_38_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_38_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">117</th>
+<td class="l data">DIAG_38_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_38_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">196</th>
+<td class="l data">DIAG_39_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_39_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">DIAG_39_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_39_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">118</th>
+<td class="l data">DIAG_39_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_39_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">160</th>
+<td class="l data">DIAG_3_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_3_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">DIAG_3_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_3_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="l data">DIAG_3_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_3_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">197</th>
+<td class="l data">DIAG_40_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_40_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">DIAG_40_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_40_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">119</th>
+<td class="l data">DIAG_40_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_40_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">198</th>
+<td class="l data">DIAG_41_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_41_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">DIAG_41_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_41_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">120</th>
+<td class="l data">DIAG_41_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_41_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">199</th>
+<td class="l data">DIAG_42_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_42_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">DIAG_42_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_42_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">121</th>
+<td class="l data">DIAG_42_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_42_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">200</th>
+<td class="l data">DIAG_43_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_43_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">DIAG_43_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_43_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">122</th>
+<td class="l data">DIAG_43_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_43_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">201</th>
+<td class="l data">DIAG_44_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_44_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">DIAG_44_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_44_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">123</th>
+<td class="l data">DIAG_44_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_44_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">202</th>
+<td class="l data">DIAG_45_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_45_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">DIAG_45_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_45_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">124</th>
+<td class="l data">DIAG_45_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_45_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">203</th>
+<td class="l data">DIAG_46_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_46_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">DIAG_46_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_46_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">125</th>
+<td class="l data">DIAG_46_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_46_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">204</th>
+<td class="l data">DIAG_47_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_47_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">DIAG_47_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_47_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">126</th>
+<td class="l data">DIAG_47_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_47_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">205</th>
+<td class="l data">DIAG_48_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_48_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">DIAG_48_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_48_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">127</th>
+<td class="l data">DIAG_48_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_48_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">206</th>
+<td class="l data">DIAG_49_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_49_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">DIAG_49_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_49_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">128</th>
+<td class="l data">DIAG_49_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_49_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">161</th>
+<td class="l data">DIAG_4_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_4_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">DIAG_4_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_4_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="l data">DIAG_4_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_4_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">207</th>
+<td class="l data">DIAG_50_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_50_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">DIAG_50_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_50_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">129</th>
+<td class="l data">DIAG_50_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_50_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">208</th>
+<td class="l data">DIAG_51_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_51_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">DIAG_51_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_51_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">130</th>
+<td class="l data">DIAG_51_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_51_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">209</th>
+<td class="l data">DIAG_52_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_52_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">DIAG_52_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_52_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">131</th>
+<td class="l data">DIAG_52_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_52_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">210</th>
+<td class="l data">DIAG_53_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_53_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">DIAG_53_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_53_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">132</th>
+<td class="l data">DIAG_53_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_53_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">211</th>
+<td class="l data">DIAG_54_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_54_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">DIAG_54_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_54_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">133</th>
+<td class="l data">DIAG_54_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_54_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">212</th>
+<td class="l data">DIAG_55_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_55_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">DIAG_55_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_55_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">134</th>
+<td class="l data">DIAG_55_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_55_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">213</th>
+<td class="l data">DIAG_56_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_56_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">DIAG_56_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_56_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">135</th>
+<td class="l data">DIAG_56_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_56_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">214</th>
+<td class="l data">DIAG_57_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_57_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">DIAG_57_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_57_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">136</th>
+<td class="l data">DIAG_57_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_57_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">215</th>
+<td class="l data">DIAG_58_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_58_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">DIAG_58_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_58_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">137</th>
+<td class="l data">DIAG_58_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_58_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">162</th>
+<td class="l data">DIAG_5_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_5_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">DIAG_5_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_5_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="l data">DIAG_5_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_5_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">163</th>
+<td class="l data">DIAG_6_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_6_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">DIAG_6_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_6_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="l data">DIAG_6_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_6_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">164</th>
+<td class="l data">DIAG_7_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_7_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">DIAG_7_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_7_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="l data">DIAG_7_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_7_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">165</th>
+<td class="l data">DIAG_8_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_8_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">DIAG_8_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_8_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="l data">DIAG_8_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_8_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">166</th>
+<td class="l data">DIAG_9_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_9_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">DIAG_9_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_9_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="l data">DIAG_9_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">DIAG_9_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">240</th>
+<td class="l data">ER_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">ER_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">241</th>
+<td class="l data">ER_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">ER_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">239</th>
+<td class="l data">ER_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">ER_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">236</th>
+<td class="l data">GENDERM</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">GENDERM</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">216</th>
+<td class="l data">PRC_59_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_59_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">PRC_59_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_59_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">138</th>
+<td class="l data">PRC_59_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_59_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">217</th>
+<td class="l data">PRC_60_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_60_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">PRC_60_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_60_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">139</th>
+<td class="l data">PRC_60_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_60_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">218</th>
+<td class="l data">PRC_61_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_61_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">PRC_61_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_61_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">140</th>
+<td class="l data">PRC_61_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_61_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">219</th>
+<td class="l data">PRC_62_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_62_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">PRC_62_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_62_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">141</th>
+<td class="l data">PRC_62_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_62_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">220</th>
+<td class="l data">PRC_63_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_63_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">PRC_63_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_63_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">142</th>
+<td class="l data">PRC_63_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_63_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">221</th>
+<td class="l data">PRC_64_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_64_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">PRC_64_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_64_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">143</th>
+<td class="l data">PRC_64_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_64_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">222</th>
+<td class="l data">PRC_65_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_65_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">PRC_65_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_65_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">144</th>
+<td class="l data">PRC_65_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_65_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">223</th>
+<td class="l data">PRC_66_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_66_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">PRC_66_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_66_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">145</th>
+<td class="l data">PRC_66_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PRC_66_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">224</th>
+<td class="l data">RX_67_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_67_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="l data">RX_67_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_67_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">146</th>
+<td class="l data">RX_67_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_67_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">225</th>
+<td class="l data">RX_68_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_68_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="l data">RX_68_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_68_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">147</th>
+<td class="l data">RX_68_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_68_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">226</th>
+<td class="l data">RX_69_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_69_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="l data">RX_69_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_69_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">148</th>
+<td class="l data">RX_69_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_69_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">227</th>
+<td class="l data">RX_70_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_70_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="l data">RX_70_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_70_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">149</th>
+<td class="l data">RX_70_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_70_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">228</th>
+<td class="l data">RX_71_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_71_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="l data">RX_71_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_71_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">150</th>
+<td class="l data">RX_71_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_71_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">229</th>
+<td class="l data">RX_72_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_72_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="l data">RX_72_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_72_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">151</th>
+<td class="l data">RX_72_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_72_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">230</th>
+<td class="l data">RX_73_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_73_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="l data">RX_73_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_73_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">152</th>
+<td class="l data">RX_73_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_73_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">231</th>
+<td class="l data">RX_74_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_74_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="l data">RX_74_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_74_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">153</th>
+<td class="l data">RX_74_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_74_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">232</th>
+<td class="l data">RX_75_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_75_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="l data">RX_75_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_75_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">154</th>
+<td class="l data">RX_75_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_75_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">233</th>
+<td class="l data">RX_76_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_76_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="l data">RX_76_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_76_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">155</th>
+<td class="l data">RX_76_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_76_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">234</th>
+<td class="l data">RX_77_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_77_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="l data">RX_77_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_77_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">156</th>
+<td class="l data">RX_77_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_77_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">235</th>
+<td class="l data">RX_78_AFREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_78_AFREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="l data">RX_78_FLAG</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_78_FLAG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">157</th>
+<td class="l data">RX_78_FREQ</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">RX_78_FREQ</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">242</th>
+<td class="l data">datasource</td>
+<td class="l data">Char</td>
+<td class="r data">3</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">238</th>
+<td class="l data">lookback_days</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">LOOKBACK_DAYS</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">patient_id</td>
+<td class="l data">Num</td>
+<td class="r data">8</td>
+<td class="l data">PATIENT_ID</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure SQL: Query Results">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">GENDERM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0</td>
+</tr>
+<tr>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX4"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure SQL: Query Results">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">2301458</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX5"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure SQL: Query Results">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">cnt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">1.4985E8</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX6"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div class="c proctitle">The SURVEYSELECT Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Surveyselect: Sample Selection Method">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Selection Method</th>
+<td class="r data">Simple Random Sampling</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Strata Variable</th>
+<td class="r data">hae_patient_id</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX7"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Surveyselect: Sample Selection Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Input Data Set</th>
+<td class="r data">NONHAE_MATCHED_U_11</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Random Number Seed</th>
+<td class="r data">1234</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Stratum Sample Size</th>
+<td class="r data">166</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Strata</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Total Sample Size</th>
+<td class="r data">166</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Output Data Set</th>
+<td class="r data">SMP_NONHAE_U_11_1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX8"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div class="c proctitle">The SURVEYSELECT Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Surveyselect: Sample Selection Method">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Selection Method</th>
+<td class="r data">Simple Random Sampling</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Strata Variable</th>
+<td class="r data">hae_patient_id</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX9"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Surveyselect: Sample Selection Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Input Data Set</th>
+<td class="r data">NONHAE_MATCHED_U_11</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Random Number Seed</th>
+<td class="r data">1234</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Stratum Sample Size</th>
+<td class="r data">34</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Strata</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Total Sample Size</th>
+<td class="r data">34</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Output Data Set</th>
+<td class="r data">SMP_NONHAE_U_11_2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX10"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div class="c proctitle">The SURVEYSELECT Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Surveyselect: Sample Selection Method">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Selection Method</th>
+<td class="r data">Simple Random Sampling</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Strata Variable</th>
+<td class="r data">hae_patient_id</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX11"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Surveyselect: Sample Selection Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Input Data Set</th>
+<td class="r data">NONHAE_MATCHED_U_11</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Random Number Seed</th>
+<td class="r data">1234</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Stratum Sample Size</th>
+<td class="r data">34</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Strata</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Total Sample Size</th>
+<td class="r data">34</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Output Data Set</th>
+<td class="r data">SMP_NONHAE_U_11_2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX12"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Datasets: Directory Information">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Directory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Libref</th>
+<td class="l data">WORK</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Engine</th>
+<td class="l data">V9</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Physical Name</th>
+<td class="l data">D:\SAS94 Temporary Files\_TD16692_WOKSSAS01P_</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Filename</th>
+<td class="l data">D:\SAS94 Temporary Files\_TD16692_WOKSSAS01P_</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX13"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Datasets: Library Members">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="l b header" scope="col">Name</th>
+<th class="l b header" scope="col">Member Type</th>
+<th class="r b header" scope="col">File Size</th>
+<th class="l b header" scope="col">Last Modified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">ALL</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:16:51</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">EVENT_FLAG</td>
+<td class="l data">DATA</td>
+<td class="r data">2417819648</td>
+<td class="l data">18/04/2016 07:13:17</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">EVENT_QC</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">18/04/2016 07:21:25</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">FLAG_VARIABLES</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">18/04/2016 06:36:40</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">HAE_PATID_DAYS_ORD_T</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">19/04/2016 05:51:00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">HAE_UNIQUE_LOOKBACKDAYS_PERIOD</td>
+<td class="l data">DATA</td>
+<td class="r data">5570560</td>
+<td class="l data">19/04/2016 05:31:35</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">I1</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:08:47</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">I2</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:09:27</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">I3</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:09:28</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">I4</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:09:43</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">NONHAE_MATCHED_U_1</td>
+<td class="l data">DATA</td>
+<td class="r data">716046336</td>
+<td class="l data">19/04/2016 05:28:08</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">NONHAE_MATCHED_U_11</td>
+<td class="l data">DATA</td>
+<td class="r data">242155520</td>
+<td class="l data">19/04/2016 06:00:00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">QC_165M</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">18/04/2016 03:52:28</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">QC_COM_CK</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">18/04/2016 06:36:40</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">SMP_NONHAE_U_11</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">19/04/2016 06:07:50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">SMP_NONHAE_U_11_1</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">19/04/2016 06:07:11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">SMP_NONHAE_U_11_2</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">19/04/2016 06:07:38</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">TEMP1_1_1</td>
+<td class="l data">DATA</td>
+<td class="r data">4816568320</td>
+<td class="l data">19/04/2016 05:51:50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">VARIABLES</td>
+<td class="l data">DATA</td>
+<td class="r data">196608</td>
+<td class="l data">18/04/2016 06:36:40</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX14"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Datasets: Directory Information">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Directory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Libref</th>
+<td class="l data">WORK</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Engine</th>
+<td class="l data">V9</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Physical Name</th>
+<td class="l data">D:\SAS94 Temporary Files\_TD16692_WOKSSAS01P_</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Filename</th>
+<td class="l data">D:\SAS94 Temporary Files\_TD16692_WOKSSAS01P_</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX15"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Datasets: Library Members">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="l b header" scope="col">Name</th>
+<th class="l b header" scope="col">Member Type</th>
+<th class="r b header" scope="col">File Size</th>
+<th class="l b header" scope="col">Last Modified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">ALL</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:16:51</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">EVENT_FLAG</td>
+<td class="l data">DATA</td>
+<td class="r data">2417819648</td>
+<td class="l data">18/04/2016 07:13:17</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">EVENT_QC</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">18/04/2016 07:21:25</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">FLAG_VARIABLES</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">18/04/2016 06:36:40</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">HAE_PATID_DAYS_ORD_T</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">19/04/2016 05:51:00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">HAE_UNIQUE_LOOKBACKDAYS_PERIOD</td>
+<td class="l data">DATA</td>
+<td class="r data">5570560</td>
+<td class="l data">19/04/2016 05:31:35</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">I1</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:08:47</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">I2</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:09:27</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">I3</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:09:28</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">I4</td>
+<td class="l data">DATA</td>
+<td class="r data">311296</td>
+<td class="l data">18/04/2016 04:09:43</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">NONHAE_MATCHED_U_1</td>
+<td class="l data">DATA</td>
+<td class="r data">716046336</td>
+<td class="l data">19/04/2016 05:28:08</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">NONHAE_MATCHED_U_11</td>
+<td class="l data">DATA</td>
+<td class="r data">242155520</td>
+<td class="l data">19/04/2016 06:00:00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">QC_165M</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">18/04/2016 03:52:28</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">QC_COM_CK</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">18/04/2016 06:36:40</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">SMP_NONHAE_U_11</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">19/04/2016 06:07:50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">SMP_NONHAE_U_11_1</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">19/04/2016 06:07:11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">SMP_NONHAE_U_11_2</td>
+<td class="l data">DATA</td>
+<td class="r data">131072</td>
+<td class="l data">19/04/2016 06:07:38</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">TEMP1_1_1</td>
+<td class="l data">DATA</td>
+<td class="r data">4816568320</td>
+<td class="l data">19/04/2016 05:51:50</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">VARIABLES</td>
+<td class="l data">DATA</td>
+<td class="r data">196608</td>
+<td class="l data">18/04/2016 06:36:40</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX16"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div class="c proctitle">The SURVEYSELECT Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Surveyselect: Sample Selection Method">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Selection Method</th>
+<td class="r data">Simple Random Sampling</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Strata Variable</th>
+<td class="r data">hae_patient_id</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX17"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Surveyselect: Sample Selection Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Input Data Set</th>
+<td class="r data">NONHAE_MATCHED_U_11</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Random Number Seed</th>
+<td class="r data">1234</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Stratum Sample Size</th>
+<td class="r data">34</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Strata</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Total Sample Size</th>
+<td class="r data">34</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Output Data Set</th>
+<td class="r data">SMP_NONHAE_U_11_2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX18"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure SQL: Query Results">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX19"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure SQL: Query Results">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX20"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure SQL: Query Results">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX21"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+</div>
+<br>
+</div>
